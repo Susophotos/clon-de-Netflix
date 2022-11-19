@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clon de Nextflix</title>
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <main>
+        <header class="header container-fluid" id="header">
+            <div class="container-fluid header__novedad d-flex justify-content-center" id="header__novedad">
+                <span class=" novedad__color m-3">¡Novedad!</span>
+                <p class="novedad__p m-3">Planes a partir de <span class="precio">5,49$</span></p>
+                <a class="novedad__a m-3" href="#">Más informacion <i class="bi bi-chevron-right myChevron"></i></a>
+                
+            </div>
+            <div class="container-fluid container__general--1 position-relative">
+                <div class="container-fluid container__hero--general">
+                    <div class="header__hero d-flex flex-column  " id="header__hero">
+                        <div class="header__nav d-flex justify-content-between p-5" id="header__nav">
+                            <img class="img-fluid img__netflix" src="img/netflix-logo-png-large.png" alt="logo de Netflix">
+                            <button class="button__iniciarSesion" id="button__iniciarSesion">Iniciar sesion</button>
+                        </div>                
+                    </div>
+                    <div class="d-flex aligne-items-center justify-content-center mt-5">
+                        <div class="header__hero--letras d-flex justify-content-center">
+                            <div class="header__h1--form d-flex flex-column justify-content-center  align-items-center pb-5" id="header__h1--form">
+                                <div><h1 class="text-center m-3 hero__text">Todas las películas y series que desees, y mucho más. </h1></div>
+                                <div><h2 class="text-center m-3 hero__text">Disfruta donde quieras. Cancela cuando quieras.</h2></div>
+                                <div><p class="text-center m-3 hero__text">¿Quieres ver algo ya? Escribe tu dirección de correo para crear una suscripción a Netflix o reactivarla.</p></div>
+                                <form class="hero__form d-flex flex-column align-items-center" action="">
+                                    <input class="input__email" type="email" placeholder="Direccion de correo"><br>
+                                    <button class="btn__email">Empezar <i class="bi bi-chevron-right myChevron"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        <div class="divisor__pagina" id="divisor__pagina">
+        </div>
+        <section class="container-fluid section__tv d-flex flex-column align-items-center" id="section__tv">
+            <div class="section__tv--text d-flex flex-column align-items-center m-5">
+                <h2 class="text-center section__general--h2">Disfruta de Netflix en tu TV.</h2>
+                <p class="text-center .section__general--p">Smart TV, Playstation, Xbox, Chromecast, Apple TV, reproductores Blu-ray y muchos más.</p>
+            </div>
+            <div class="section__tv--img d-flex flex-column align-items-center" >
+                <!-- <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="Imagen de tv"> -->
+                <img alt="" class="img-fluid our-story-card-img" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" data-uia="our-story-card-img">
+            </div>
+            
+        </section>
+        <div class="divisor__pagina" id="divisor__pagina">
+        </div>
+        <section class="container-fluid d-flex justify-content-center flex-column align-items-center section__PerfilInfantil" id="section__PerfilInfantil">
+            <h2 class="text-center section__general--h2">Crea perfiles infantiles.</h2>
+            <p class="text-center .section__general--p">Deja que los niños vivan aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, gratis con tu suscripción.</p>
+            <img class="img-fluid" src="https://occ-0-7355-5574.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABXD8VCvF3io_9rBqutSs7hm9hSPd09Dmf7ItAiCB_IZHb-MIwlrPRPY3MK_nUwwmD1_uwlt5k4tp9unD2JqarZ18HFPn22Lsy_E7.png?r=500" alt="Imagen de perfil infantil.">
+        </section>
+        <div class="divisor__pagina" id="divisor__pagina">
+        </div>
+        <section class="section__descargate d-flex flex-column justify-content-center align-items-center" id="section__descargate">
+            <h2 class="text-center  section__general--h2">Descárgate tus series favoritas para verlas sin conexión.</h2>
+            <p class="text-center .section__general--p">Disponible en todos los planes menos en el Básico con anuncios.</p>
+            <img class="img-fluid" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="Imagen de serie famosa tendencia">
+        </section>
+        <div class="divisor__pagina" id="divisor__pagina">
+        </div>
+        <section class="section__preguntas" id="section__preguntas">
+            <div>
+                <p>¿Que es Netflix?</p>
+                <button>plus</button>
+            </div>
+            <div>
+                <p>¿Cuanto cuesta Netflix</p>
+                <button>plus</button>
+            </div>
+            <div>
+                <p>Cual es la diferencia de basico con anuncios?</p>
+                <button>plus</button>
+            </div>
+            <div>
+                <p>¿Donde puedo ver Netflix</p>
+                <button>plus</button>
+            </div>
+            <div>
+                <p>¿Como csancelo?</p>
+                <button>plus</button>
+            </div>
+            <div>
+                <p>¿Que puedo ver en Netflix?</p>
+                <button>plus</button>
+            </div>
+            <div>
+                <p>¿Es Netflix bueno para los niños?</p>
+                <button>plus</button>
+            </div>
+            <div class="section__preguntas--info" id="section__preguntas--info">
+                <p>¿Quieres ver algo ya? Escribe tu dirección de correo para crear una suscripción a Netflix o reactivarla.</p>
+                <form action="">
+                    <input type="email" placeholder="Direccion de correo">
+                    <input type="submit" placeholder="Empezar">
+                </form>
+            </div>
+        </section>
+        <div class="divisor__pagina" id="divisor__pagina">
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/dc22095887.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
