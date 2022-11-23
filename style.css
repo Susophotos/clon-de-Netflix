@@ -5,14 +5,14 @@
 body{
     background-color: black !important;
 }
-
+h2{
+    font-size: 3rem !important;
+    margin-top: 2rem !important;
+}
 *{
     color: white;
 }
-.section__general--h2{
-    font-size: 2.8rem;
-    margin-top: 2rem;
-}
+
 .section__general--p{
     font-size: 1.4rem;
 }
@@ -44,23 +44,57 @@ body{
 }
 .novedad__color{
     background-color: var(--main-red);
-    border-radius: 10rem;
+    border-radius: 2rem !important;
     padding: 0 1rem 0 1rem;
+    
     
 }
 .myChevron{
     color: #0000FF;
 }
 /* header hero------------------------------------------- */
-header__nav{
+/* .header__nav{
     position: absolute;
     top: 0;
     left: 0;
-}
+} */
 
 
 
     /* background-image: url("https://www.compraventaibarra.com/wp-content/uploads/2020/05/pelis.jpg"); */
+
+.header__nav--buttonLenguaje{
+    background: none !important;
+    border: solid 1px rgb(163, 163, 163);
+    border-radius: 2px;
+    padding: .3rem;
+    margin-right: 1.5rem;
+    position: relative;
+}
+.dropDow__lenguages{
+    position: relative;
+    display: inline-block;
+}
+.div__lenguaje{
+    display:none;
+    position: absolute;
+    background-color: rgb(54, 54, 54);
+    border: solid 1px rgb(163,163,163);
+    padding: .3rem;
+    border-radius: 10px;
+}
+.div__lenguaje span a{
+    text-decoration: none;
+    color: white;
+}
+.div__lenguaje span:hover{
+    background-color: #6666ff;
+    border-radius: .3rem;
+}
+.dropDow__lenguages:hover .div__lenguaje{
+    display: block;
+}
+
 
 .img__netflix{
     width: 8rem;
@@ -68,7 +102,7 @@ header__nav{
 .button__iniciarSesion{
     background-color: var(--main-red);
     border: none;
-    padding: .3rem;
+    padding: .3rem 1rem .3rem 1rem;
     border-radius: 3px;
 }
 .header__h1--form{
@@ -87,7 +121,7 @@ header__nav{
 .container__general--1{
     background-image: url("https://d500.epimg.net/cincodias/imagenes/2020/12/31/lifestyle/1609408585_467254_1609408795_noticia_normal.jpg");
     background-size: cover;
-    min-height: 90vh;
+    
 }
 .container__hero--general{
     position: relative;
@@ -118,10 +152,44 @@ header__nav{
 
 /* seccion tv--------------------------------------------- */
 
-.section__tv{
-    min-height: 50vh;
-}
+
 
 
 /* section infantil __________________________________________ */
 
+
+/* section preguntas:________________________ */
+
+
+.section__preguntas--div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+    padding: 1rem;
+    margin: .7rem;
+}
+.section__preguntas--div button{
+    background: none;
+    border: none;
+}
+.section__preguntas--div button i{
+    font-size: 1.5rem;
+}
+
+
+/* media querys_______________________ */
+@media (max-width: 425px ){
+    .novedad__color {
+        max-height: 25px;
+    }
+    .novedad__color span{
+        font-size: .7rem;
+    }
+    .novedad__planes--p p , .novedad__masInfo--a a  {
+        font-size: .7rem;
+    }   
+    .precio{
+        font-size: .9rem !important;
+    }
+}
