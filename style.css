@@ -192,4 +192,7 @@ h2{
     .precio{
         font-size: .9rem !important;
     }
+    .img__netflix{
+        max-width: 5rem !important;
+    }
 }
