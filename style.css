@@ -209,6 +209,10 @@ h2{
 .header__nav--buttonLenguaje2{
     height: 3rem;
 }
+.a__iniciar{
+    text-decoration: none;
+    color: white;
+}
 /* media querys_______________________ */
 @media (max-width: 425px ){
     .novedad__color {
