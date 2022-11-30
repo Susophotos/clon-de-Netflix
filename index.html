@@ -31,25 +31,29 @@
                 <div class="container-fluid container__hero--general">
                     <div class="header__hero d-flex flex-column  " id="header__hero">
                         <div class="header__nav container-fluid d-flex justify-content-between p-2" id="header__nav">
-                            <img class="img-fluid img__netflix m-3" src="img/netflix-logo-png-large.png" alt="logo de Netflix">
-                            <div class="header__nav--buttons d-flex">
+                            <div>
+                                <img class="img-fluid img__netflix m-3" src="img/netflix-logo-png-large.png" alt="logo de Netflix">
+                            </div>                            
+                            <div class="header__nav--buttons d-flex justify-content-center align-items-center ">
                                 <div class="dropDow__lenguages">
                                     <button class="header__nav--buttonLenguaje"><i class="bi bi-globe2 m-2"></i>Español<i class="bi bi-caret-down-fill m-2"></i></button>
                                     <div class="div__lenguaje">
-                                        <span class="p-1"><a href="#">Español</a></span><br>
-                                        <span class="p-1"><a href="#">English</a></span>
+                                        <span class="botones__lenguajes p-1"><a href="#">Español</a></span><br>
+                                        <span class="botones__lenguajes p-1"><a href="#">English</a></span>
                                     </div>
-                                </div>                                
-                                <button class="button__iniciarSesion" id="button__iniciarSesion">Iniciar sesion</button>
+                                </div>  
+                                <div>
+                                    <button class="button__iniciarSesion" id="button__iniciarSesion">Iniciar sesion</button>
+                                </div>                                                              
                             </div>                            
                         </div>                
                     </div>
                     <div class="d-flex aligne-items-center justify-content-center mt-5">
                         <div class="header__hero--letras d-flex justify-content-center">
                             <div class="header__h1--form d-flex flex-column justify-content-center  align-items-center pb-5" id="header__h1--form">
-                                <div><h1 class="text-center m-3 hero__text">Todas las películas y series que desees, y mucho más. </h1></div>
-                                <div><h2 class="text-center m-3 hero__text">Disfruta donde quieras. Cancela cuando quieras.</h2></div>
-                                <div><p class="text-center m-3 hero__text">¿Quieres ver algo ya? Escribe tu dirección de correo para crear una suscripción a Netflix o reactivarla.</p></div>
+                                <div><h1 class="hero__h1 text-center m-3 hero__text">Todas las películas y series que desees, y mucho más. </h1></div>
+                                <div><h2 class="hero__h2 text-center m-3 hero__text">Disfruta donde quieras. Cancela cuando quieras.</h2></div>
+                                <div><p class="hero__p text-center m-3 hero__text">¿Quieres ver algo ya? Escribe tu dirección de correo para crear una suscripción a Netflix o reactivarla.</p></div>
                                 <form class="hero__form d-flex flex-column align-items-center" action="">
                                     <input class="input__email" type="email" placeholder="Direccion de correo"><br>
                                     <button class="btn__email">Empezar <i class="bi bi-chevron-right myChevron"></i></button>
@@ -92,46 +96,152 @@
         </div>
         <section class="section__preguntas p-4" id="section__preguntas">
             <h2 class="text-center mt-3">Preguntas frecuentes</h2>
-            <div class="section__preguntas--div">
-                <span>¿Que es Netflix?</span>
-                <button><i class="bi bi-plus"></i></button>
+            <div id="section__preguntas--div0" class="section__preguntas--div">
+                <span class="fs-2">¿Que es Netflix?</span>
+                <button id="btn__preguntas0-close" class="d-none"><i class="bi bi-x fs-1"></i></button>
+                <button id="btn__preguntas0" class="btn__preguntas0"><i class="bi bi-plus fs-1"></i></button>                
             </div>
-            <div class="section__preguntas--div">
-                <span>¿Cuanto cuesta Netflix</span>
-                <button><i class="bi bi-plus"></i></button>
+            <div class="respuesta_desplegable section__preguntas--respuesta1 section__preguntas--div d-flex flex-column d-none">
+                <p class="fs-3">
+                    Netflix es un servicio de streaming que ofrece una amplia variedad de series, películas, títulos de anime, documentales y otros contenidos premiados en miles de dispositivos conectados a internet.
+                </p>
+                <p class="fs-3">
+                    Puedes ver todo lo que quieras, cuando quieras, por una tarifa mensual reducida. ¡Siempre hay algo nuevo que descubrir, y cada semana se añaden nuevas series y películas!
+                </p>
             </div>
-            <div class="section__preguntas--div">
-                <span>Cual es la diferencia de basico con anuncios?</span>
-                <button><i class="bi bi-plus"></i></button>
+            <div id="section__preguntas--div1" class="section__preguntas--div">
+                <span class="fs-2">¿Cuanto cuesta Netflix</span>
+                <button id="btn__preguntas1-close" class="d-none"><i class="bi bi-x fs-1"></i></button>
+                <button id="btn__preguntas1"><i class="bi bi-plus fs-1"></i></button>
             </div>
-            <div class="section__preguntas--div">
-                <span>¿Donde puedo ver Netflix</span>
-                <button><i class="bi bi-plus"></i></button>
+            <div class="respuesta_desplegable section__preguntas--respuesta2 section__preguntas--div d-flex flex-column d-none">
+                <p class="fs-3">
+                    Disfruta de Netflix en tu smartphone, tableta, Smart TV, ordenador o dispositivo de streaming, todo por una tarifa mensual fija. Planes desde 5,49 € a 17,99 € al mes. Sin cargos adicionales ni contratos.
+                </p>
+                
             </div>
-            <div class="section__preguntas--div">
-                <span>¿Como csancelo?</span>
-                <button><i class="bi bi-plus"></i></button>
+            <div id="section__preguntas--div2" class="section__preguntas--div">
+                <span class="fs-2">Cual es la diferencia de basico con anuncios?</span>
+                <button id="btn__preguntas2-close" class="d-none"><i class="bi bi-x fs-1"></i></button>
+                <button id="btn__preguntas2"><i class="bi bi-plus fs-1"></i></button>
             </div>
-            <div class="section__preguntas--div">
-                <span>¿Que puedo ver en Netflix?</span>
-                <button>plus</button>
+            <div class="respuesta_desplegable section__preguntas--respuesta3 section__preguntas--div d-flex flex-column d-none">
+                <p class="fs-3">
+                    Básico con anuncios es una manera excelente de disfrutar de series y películas a un precio más bajo. Puedes ver tus títulos favoritos en cualquier dispositivo con algunas pausas publicitarias. Este plan no permite descargas y algunas series y películas no estarán disponibles debido a las restricciones de licencias. También hay ciertas restricciones relacionadas con los dispositivos y la ubicación. Más información.
+                </p>
+                
             </div>
-            <div class="section__preguntas--div">
-                <span>¿Es Netflix bueno para los niños?</span>
-                <button><i class="bi bi-plus"></i></button>
+            <div id="section__preguntas--div3" class="section__preguntas--div">
+                <span class="fs-2">¿Dónde puedo ver Netflix</span>
+                <button id="btn__preguntas3-close" class="d-none"><i class="bi bi-x fs-1"></i></button>
+                <button id="btn__preguntas3"><i class="bi bi-plus fs-1"></i></button>
+            </div>
+            <div class="respuesta_desplegable section__preguntas--respuesta4 section__preguntas--div d-flex flex-column d-none">
+                <p class="fs-3">
+                    Disfruta donde quieras y cuando quieras. Inicia sesión con tu cuenta de Netflix para disfrutar al instante de todo el contenido de netflix.com desde tu ordenador personal o en cualquier dispositivo conectado a internet que ofrezca la aplicación de Netflix, entre ellos, smart TV, smartphones, tabletas, reproductores multimedia de streaming y consolas de juegos.
+                </p>
+                <p class="fs-3">
+                    También puedes descargar tus series favoritas con la aplicación de iOS, Android o Windows 10. Utiliza las descargas para ver títulos dondequiera que vayas y cuando no dispongas de conexión a internet. Netflix siempre te acompaña.
+                </p>
+            </div>
+            <div id="section__preguntas--div4" class="section__preguntas--div">
+                <span class="fs-2">¿Como cancelo?</span>
+                <button id="btn__preguntas4-close" class="d-none"><i class="bi bi-x fs-1"></i></button>
+                <button id="btn__preguntas4"><i class="bi bi-plus fs-1"></i></button>
+            </div>
+            <div class="respuesta_desplegable section__preguntas--respuesta5 section__preguntas--div d-flex flex-column d-none">
+                <p class="fs-3">
+                    Netflix es flexible. Sin contratos liosos ni compromisos. Puedes cancelar fácilmente tu cuenta en línea con tan solo dos clics. Sin cargos por cancelación: activa o cancela tu cuenta en cualquier momento.
+                </p>
+            </div>
+            <div id="section__preguntas--div5" class="section__preguntas--div">
+                <span class="fs-2">¿Que puedo ver en Netflix?</span>
+                <button id="btn__preguntas5-close" class="d-none"><i class="bi bi-x fs-1"></i></button>
+                <button id="btn__preguntas5"><i class="bi bi-plus fs-1"></i></button>
+            </div>
+            <div class="respuesta_desplegable section__preguntas--respuesta6 section__preguntas--div d-flex flex-column d-none">
+                <p class="fs-3">
+                    Netflix es flexible. Sin contratos liosos ni compromisos. Puedes cancelar fácilmente tu cuenta en línea con tan solo dos clics. Sin cargos por cancelación: activa o cancela tu cuenta en cualquier momento.
+                </p>
+            </div>
+            <div id="section__preguntas--div6" class="section__preguntas--div">
+                <span class="fs-2">¿Es Netflix bueno para los niños?</span>
+                <button id="btn__preguntas6-close" class="d-none"><i class="bi bi-x fs-1"></i></button>
+                <button id="btn__preguntas6"><i class="bi bi-plus fs-1"></i></button>
+            </div>
+            <div class="respuesta_desplegable section__preguntas--respuesta7 section__preguntas--div d-flex flex-column d-none">
+                <p class="fs-3">
+                    La experiencia infantil de Netflix se incluye en la suscripción para que los padres tengan el control mientras los niños disfrutan de series y películas familiares en su propio espacio.
+                </p>
+                <p class="fs-3">
+                    Los perfiles infantiles incluyen controles parentales protegidos por PIN que te permiten restringir la calificación por edades del contenido que pueden ver los niños y bloquear determinados títulos que no quieras que vean.
+                </p>
             </div>
             <div class="section__preguntas--info" id="section__preguntas--info">
-                <p>¿Quieres ver algo ya? Escribe tu dirección de correo para crear una suscripción a Netflix o reactivarla.</p>
-                <form action="">
-                    <input type="email" placeholder="Direccion de correo">
-                    <input type="submit" placeholder="Empezar">
-                </form>
+                <p class="text-center fs-3">¿Quieres ver algo ya? Escribe tu dirección de correo para crear una suscripción a Netflix o reactivarla.</p>
+                <div class="form__subscribe d-flex justify-content-center">
+                    <form action="">
+                        <input type="email" placeholder="Direccion de correo" style="width: 20rem; height: 3rem;" class="inputs__login p-2">
+                        <button class="btn__email btn__email2">Empezar <i class="bi bi-chevron-right myChevron"></i></button>
+                    </form>
+                </div>
             </div>
         </section>
         <div class="divisor__pagina" id="divisor__pagina">
         </div>
     </main>
     <footer>
+
+        <div class="row m-3 my__footer py-5">
+            <div class="col-12">
+                <p>¿Preguntas? Llama al 900 822 376</p>
+            </div>
+            <div class="col-3">
+                <ul class="list-unstyled">
+                    <li class="fs-6">Preguntas frecuentes</li>
+                    <li class="fs-6">Inversores</li>
+                    <li class="fs-6">Formas de ver</li>
+                    <li class="fs-6">Información corporativa</li>
+                    <li class="fs-6">Avisos legales</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="list-unstyled">
+                    <li class="fs-6">Centro de ayuda</li>
+                    <li class="fs-6">Empleo</li>
+                    <li class="fs-6">Términos de uso</li>
+                    <li class="fs-6">Contáctanos</li>
+                    <li class="fs-6">Solo en Netflix</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="list-unstyled">
+                    <li class="fs-6">Cuenta</li>
+                    <li class="fs-6">Canjear tarjetas regalo</li>
+                    <li class="fs-6">Privacidad</li>
+                    <li class="fs-6">Prueba de velocidad</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="list-unstyled">
+                    <li class="fs-6">Zona de prensa</li>
+                    <li class="fs-6">Comprar tarjetas regalo</li>
+                    <li class="fs-6">Preeferencias de cookies</li>
+                    <li class="fs-6">Garantia legal</li>
+                </ul>
+            </div>
+            <div class="col12">
+                <div class="dropDow__lenguages mt-4">
+                    <button class="header__nav--buttonLenguaje header__nav--buttonLenguaje2"><i class="bi bi-globe2 m-2"></i>Español<i class="bi bi-caret-down-fill m-2"></i></button>
+                    <div class="div__lenguaje">
+                        <span class="botones__lenguajes p-1"><a href="#">Español</a></span><br>
+                        <span class="botones__lenguajes p-1"><a href="#">English</a></span>
+                    </div>
+                </div>  
+            </div>
+            <span class="mt-3">Netflix España</span>
+        </div>
+        
 
     </footer>
 
